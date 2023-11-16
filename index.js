@@ -19,16 +19,13 @@ items.forEach(item => {
 }
 
 const findItemById = (id) => {
-  items.find(item => item.id === id);
+  return items.find(item => item.id === id)
+} 
+
+function capitalizeNames() {
+  capitalizeNames.map (item => item.name.toUpperCase());
 }
 
-/**
- * @returns {items[]} Returns a new array with capitalized names
- */
-function capitalizeNames() {
-  // TODO:  Use the .map() and possibly .slice() methods and return a new items array with the item names capitalized
-  // DO NOT MUTATE THE ORIGINAL ARRAY IN YOU LOGIC
-}
 const calculateTotalInventory = () => { 
  return items.reduce((totalItemInventory, item) => totalItemInventory + item.inventory);
 }
@@ -56,7 +53,7 @@ function logCartItems() {
 /**
  * @returns { number } returns the total price of items in your cart
  */
-function calculateTotalCartPrice() {
+function calculateTotalCart0j Price() {
   // TODO: Loop through your cart and return the total price of all items in your cart
 }
 
@@ -92,7 +89,7 @@ console.log(
   "The total price of all items in inventory is: ",
   calculateAllInventoryPrice()
 );
-
+``
 const itemToFind = prompt(
   "Enter the name of an item to find the price of",
   "apple"
